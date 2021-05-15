@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        let a,b,c,d,e,f,g,h,khoang_trang1,khoang_trang2;
+        for(a = 1;a<=5 ;a++){
+            for (b = 1; b<=a ; b++){
+                document.write('*');
+            }
+            document.write('<br/>');
+        }
+        for(c = 5;c>=1 ;c--){
+            for (d = 1; d<=c ; d++){
+                document.write('*');
+            }
+            document.write('<br/>');
+        }
+        for(e = 1;e<=5 ;e++){
+            khoang_trang1 = 5-e;
+            for (let kt1 = 1; kt1 <=khoang_trang1; kt1++){
+                document.write('&nbsp;&nbsp;');
+            }
+            for (f = 1; f<=e ; f++){
+                document.write('*');
+            }
+            document.write('<br/>');
+        }
+        for(g = 5;g>=1 ;g--){
+            khoang_trang2 = 5-g;
+            for (let kt2 = 1; kt2 <=khoang_trang2; kt2++){
+                document.write('&nbsp;&nbsp;');
+            }
+            for (h = 1;h<=g ; h++){
+                document.write('*');
+            }
+            document.write('<br/>');
+        }
+    </script>  
+</body>
+</html>
