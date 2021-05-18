@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        var number = +prompt('Input a number: '); // Nhập vào số lượng số nguyên tố cần hiển thị.
+        var n = 2; // giá trị số nguyên tố đầu tiên
+        document.write(number + ' số nguyên tố đầu tiên là: <br/>');
+        for (var count = 0; count < number; count ++) // vòng lặp kiểm tra xem đã đủ số nguyên tố theo yêu cầu chưa?
+        {
+            var flag = true; // cờ hiệu kiểm tra
+ 
+            // lặp từ 2 tới n-1
+            for (var i = 2; i < n-1; i++)
+            {
+                if (n % i == 0)
+                {
+                    flag = false;
+                    break;
+                }
+            }  
+ 
+
+            // Kiểm tra biến flag
+            
+            if (flag == true) // nếu đúng thì in ra giá trị n và tăng giá trị n lên 1 để kiểm tra số tiếp theo.
+            {
+                
+                document.write(n + '<br/>');
+                n++;
+            }   
+            else // nếu sai thì không in ra giá trị n, giảm biến count đi 1 ( bởi vì sau vòng lặp lớn count ++), tiếp tục tăng n lên 1 kiểm tra tiếp.
+            {
+                count --;
+                n++;
+            }
+        }
+
+    </script>    
+</body>
+</html>
